@@ -8,7 +8,6 @@ module.exports = function (context, input, cb) {
       product.price.tiers = []
     }
   }
-  context.log.info({products: JSON.stringify(input.products)}, 'what products look after adjust step')
 
   cb(null, {products: input.products})
 }
