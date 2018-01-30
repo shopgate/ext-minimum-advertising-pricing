@@ -5,14 +5,13 @@ module.exports = function (context, input, cb) {
       value: 'yes'
     }
   ]
-  for (let product of input.products) {
-    if (product.properties) {
-      if (hasTriggerProperty(product.properties, triggerProps)) {
-        product.flags.isMapProduct = true
-      }
+  const adjustedProducts = input.products.map((product) => {
+    if (hasTriggerProperty(product.properties, triggerProps)) {
+      product.flags.isMapProduct = true
     }
-  }
-  cb(null, {products: input.products})
+    return product
+  })
+  cb(null, {products: adjustedProducts})
 }
 
 /**
@@ -22,7 +21,7 @@ module.exports = function (context, input, cb) {
  */
 function hasTriggerProperty (properties, triggerProps) {
   for (let property of properties) {
-    let foundObject = triggerProps.find(triggerProp => triggerProp.label === property.label && triggerProp.value === property.value)
+    let foundObject = triggerProps.find(triggerProp => triggerProp.label.toLowerCase() === property.label.toLowerCase() && triggerProp.value.toLowerCase() === property.value.toLowerCase())
     if (foundObject) {
       return true
     }

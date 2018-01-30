@@ -1,9 +1,22 @@
 module.exports = function (context, input, cb) {
-  const propertiesToRemove = ['Apply Map']
-  const filteredProperties = input.properties.filter(function (property) {
-    if (propertiesToRemove.indexOf(property.label) < 0) {
-      return property
-    }
-  })
+  const propertiesBlacklist = []
+  const propertiesWhitelist = ['brand', 'color family']
+  let filteredProperties = input.properties
+
+  if (propertiesBlacklist.length > 0) {
+    filteredProperties = input.properties.filter(function (property) {
+      if (propertiesBlacklist.indexOf(property.label.toLowerCase()) < 0) {
+        return property
+      }
+    })
+  }
+
+  if (propertiesWhitelist.length > 0) {
+    filteredProperties = input.properties.filter(function (property) {
+      if (propertiesWhitelist.indexOf(property.label.toLowerCase()) >= 0) {
+        return property
+      }
+    })
+  }
   cb(null, {properties: filteredProperties})
 }
