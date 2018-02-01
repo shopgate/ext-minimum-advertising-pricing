@@ -21,7 +21,10 @@ module.exports = function (context, input, cb) {
  */
 function hasTriggerProperty (properties, triggerProps) {
   for (let property of properties) {
-    let foundObject = triggerProps.find(triggerProp => triggerProp.label.toLowerCase() === property.label.toLowerCase() && triggerProp.value.toLowerCase() === property.value.toLowerCase())
+    let foundObject = triggerProps.find(
+      triggerProp => triggerProp.label.toLowerCase() === property.label.toLowerCase() &&
+      triggerProp.value.toLowerCase() === property.value.toLowerCase()
+    )
     if (foundObject) {
       return true
     }
