@@ -1,7 +1,7 @@
 {
   "version": "1",
   "pipeline": {
-    "id": "getProductProperties_v1",
+    "id": "shopgate.catalog.getProductProperties.v1",
     "input": [
       {
         "id": "1",
