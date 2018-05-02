@@ -1,0 +1,36 @@
+{
+  "name": "@shopgate-project/city-gear_30059",
+  "version": "0.2.3",
+  "description": "Shopgate Connect City Gear custom adaptions.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage",
+    "coverage:watch": "jest --coverage --watch"
+  },
+  "devDependencies": {
+    "@shopgate/eslint-config": "^5.2.0",
+    "@shopgate/pwa-common": "^5.1.0-beta.3",
+    "@shopgate/pwa-common-commerce": "^5.1.0-beta.3",
+    "@shopgate/pwa-core": "^5.1.0-beta.3",
+    "@shopgate/pwa-unit-test": "^5.1.0-beta.3",
+    "@shopgate/react-hammerjs": "^0.5.3",
+    "babel-core": "^6.26.0",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-inline-elements": "^6.22.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.19.1",
+    "glamor": "^2.20.40",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0"
+  }
+}
