@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import I18n from '@shopgate/pwa-common/components/I18n';
-import connect from './connector';
-import Price from './components/Price';
+import connect from '../connector';
+import Price from './components/Price/index';
 
 /**
  * The ProductDetailPrice component.
