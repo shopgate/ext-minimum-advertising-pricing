@@ -4,13 +4,13 @@
   "components": [
     {
       "id": "ProductDetailPrice",
-      "path": "frontend/components/ProductDetailPrice/index.jsx",
+      "path": "frontend/pages/product/ProductDetailPrice/index.jsx",
       "target": "product.price",
       "type": "portals"
     },
     {
       "id": "ProductDetailStrikePrice",
-      "path": "frontend/components/ProductDetailStrikePrice/index.jsx",
+      "path": "frontend/pages/product/ProductDetailStrikePrice/index.jsx",
       "target": "product.price-striked",
       "type": "portals"
     },

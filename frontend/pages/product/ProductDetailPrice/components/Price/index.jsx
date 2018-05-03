@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PlaceholderLabel from '../../../PlaceholderLabel';
-import PriceBase from './components/Price';
+import PlaceholderLabel from '../../../../../components/PlaceholderLabel/index';
+import PriceBase from '../../../../../components/Price/index';
 import styles from './style';
 
 /**

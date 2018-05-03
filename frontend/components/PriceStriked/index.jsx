@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import I18n from '@shopgate/pwa-common/components/I18n';
-import PlaceholderLabel from '../../../PlaceholderLabel';
-import StrikePrice from './components/PriceStriked';
+import PlaceholderLabel from '../PlaceholderLabel/index';
+import StrikePrice from './components/PriceStriked/index';
 import styles from './style';
 
 /**
