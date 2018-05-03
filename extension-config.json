@@ -15,6 +15,18 @@
       "type": "portals"
     },
     {
+      "id": "CategoryItemPrice",
+      "path": "frontend/pages/category/CategoryItemPrice/index.jsx",
+      "target": "product-item.price",
+      "type": "portals"
+    },
+    {
+      "id": "CategoryItemDiscountBadge",
+      "path": "frontend/pages/category/DiscountBadge/index.jsx",
+      "target": "product-item.discount",
+      "type": "portals"
+    },
+    {
       "type": "translations",
       "path": "frontend/locale/en-US.json",
       "id": "locale/en-US"
