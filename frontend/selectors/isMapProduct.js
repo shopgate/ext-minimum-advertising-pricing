@@ -3,11 +3,11 @@ import { getCurrentBaseProduct } from '@shopgate/pwa-common-commerce/product/sel
 
 export const isMapProduct = createSelector(
   getCurrentBaseProduct,
-  currentBaseProduct => {
+  (currentBaseProduct) => {
     if (currentBaseProduct && currentBaseProduct.flags && currentBaseProduct.flags.isMapProduct) {
       return true;
     }
 
-   return false;
+    return false;
   }
 );
