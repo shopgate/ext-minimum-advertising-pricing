@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import connect from '../connector';
-import StrikePrice from '../../../components/PriceStriked';
+import StrikePrice from './components/PriceStriked';
 
 /**
  * The ProductDetailStrikePrice component.

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Grid from '@shopgate/pwa-common/components/Grid';
-import Price from '../../../../../components/Price/index';
-import PriceStriked from '../../../../../components/PriceStriked/index';
+import Price from '../../../../../components/Price';
+import PriceStriked from '../../../../../components/PriceStriked';
 import styles from './style';
 
 /**

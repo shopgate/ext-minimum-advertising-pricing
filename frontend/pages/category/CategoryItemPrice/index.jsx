@@ -4,7 +4,7 @@ import I18n from '@shopgate/pwa-common/components/I18n';
 import connect from '../connector';
 import PriceWrapperGrid from './components/PriceWrapperGrid';
 import PriceWrapperList from './components/PriceWrapperList';
-import { GRID_VIEW } from '../constants';
+import { LIST_VIEW } from '../constants';
 
 /**
  * The CategoryItemPrice component.
@@ -20,9 +20,9 @@ const CategoryItemPrice = ({ price, isMapProduct, viewMode }) => {
     );
   }
   return (
-    viewMode === GRID_VIEW ?
-      <PriceWrapperGrid price={price} /> :
-      <PriceWrapperList price={price} />
+    viewMode === LIST_VIEW ?
+      <PriceWrapperList price={price} /> :
+      <PriceWrapperGrid price={price} />
   );
 };
 
@@ -35,7 +35,7 @@ CategoryItemPrice.propTypes = {
 CategoryItemPrice.defaultProps = {
   isMapProduct: false,
   price: {},
-  viewMode: GRID_VIEW,
+  viewMode: LIST_VIEW,
 };
 
 export default connect(CategoryItemPrice);

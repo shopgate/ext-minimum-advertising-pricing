@@ -8,10 +8,12 @@ import { isMapProductById } from '../../selectors/isMapProductById';
  * @param {string} productId Given product.
  * @return {Object} The extended component props.
  */
-const mapStateToProps = (state, { productId }) => ({
-  price: getProductPriceById(state, productId),
-  isMapProduct: isMapProductById(state, productId),
-  viewMode: state.ui.categoryPage.viewMode,
-});
+const mapStateToProps = (state, { productId }) => (
+  {
+    price: getProductPriceById(state, productId),
+    isMapProduct: isMapProductById(state, productId),
+    viewMode: (state.ui && state.ui.categoryPage) ? state.ui.categoryPage.viewMode : '',
+  }
+);
 
 export default connect(mapStateToProps);
