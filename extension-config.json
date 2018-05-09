@@ -1,6 +1,37 @@
 {
   "version": "0.2.1",
   "id": "@shopgate/minimum-advertising-pricing",
+  "components": [
+    {
+      "id": "ProductDetailPrice",
+      "path": "frontend/pages/product/ProductDetailPrice/index.jsx",
+      "target": "product.price",
+      "type": "portals"
+    },
+    {
+      "id": "ProductDetailStrikePrice",
+      "path": "frontend/pages/product/ProductDetailStrikePrice/index.jsx",
+      "target": "product.price-striked",
+      "type": "portals"
+    },
+    {
+      "id": "CategoryItemPrice",
+      "path": "frontend/pages/category/CategoryItemPrice/index.jsx",
+      "target": "product-item.price",
+      "type": "portals"
+    },
+    {
+      "id": "CategoryItemDiscountBadge",
+      "path": "frontend/pages/category/DiscountBadge/index.jsx",
+      "target": "product-item.discount",
+      "type": "portals"
+    },
+    {
+      "type": "translations",
+      "path": "frontend/locale/en-US.json",
+      "id": "locale/en-US"
+    }
+  ],
   "configuration": {
   }
 }
