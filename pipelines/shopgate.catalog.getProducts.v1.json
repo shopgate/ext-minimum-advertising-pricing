@@ -400,23 +400,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "@shopgate/minimum-advertising-pricing",
-        "path": "@shopgate/minimum-advertising-pricing/adjustProductsForMapPricing.js",
-        "type": "extension",
-        "input": [
-          {
-            "id": "100",
-            "key": "products"
-          }
-        ],
-        "output": [
-          {
-            "id": "100",
-            "key": "products"
-          }
-        ]
       }
     ],
     "output": [
