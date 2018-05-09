@@ -1,7 +1,7 @@
 module.exports = function (context, input, cb) {
   const adjustedProducts = input.products.map((product) => {
     if (product.flags.isMapProduct) {
-      product.price = null
+      product.price = {}
     }
     return product
   })
