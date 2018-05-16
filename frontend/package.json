@@ -1,6 +1,6 @@
 {
   "name": "@shopgate/minimum-advertising-pricing",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Shopgate Connect City Gear custom adaptions.",
   "license": "Apache-2.0",
   "scripts": {
