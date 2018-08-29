@@ -1,7 +1,7 @@
 {
   "name": "@shopgate/minimum-advertising-pricing",
-  "version": "0.3.1",
-  "description": "Shopgate Connect City Gear custom adaptions.",
+  "version": "1.0.0",
+  "description": "Hides prices on lists, pdp and favlist if the product has some MAP rules",
   "license": "Apache-2.0",
   "scripts": {
     "lint": "eslint .",
