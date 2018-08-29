@@ -61,12 +61,12 @@ class Price extends Component {
             currency={price.currency}
           />
         }
-        <ProductPrice
-          currency={price.price.currency}
-          unitPrice={price.price.unitPriceWithTax}
-          discounted={price.price.discount > 0}
-          smallStriked
-        />
+          <ProductPrice
+            currency={price.price.currency}
+            unitPrice={price.price.unitPriceWithTax}
+            discounted={price.price.discount > 0}
+            smallStriked
+          />
       </Fragment>
     );
   }
