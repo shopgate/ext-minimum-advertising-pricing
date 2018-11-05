@@ -39,5 +39,18 @@
     }
   ],
   "configuration": {
-  }
+  },
+  "steps": [
+    {
+      "path": "extension/flagMapProducts.js",
+      "hooks": ["shopgate.catalog.getProducts.v1:afterFetchProducts"],
+      "input": [
+        {"key": "products"},
+        {"key": "categoryId", "optional": true}
+      ],
+      "output": [
+        {"key": "products"}
+      ]
+    }
+  ]
 }
