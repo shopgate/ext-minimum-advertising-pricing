@@ -23,7 +23,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Add MAP flag to getProduct_v1 pipeline
 - Filter out all `Apply Map` property from the products
 
-[1.0.1]: https://github.com/shopgate/ext-minimum-advertising-pricing/compare/v0.3.1...v1.0.1
-[0.3.1]: https://github.com/shopgate/ext-minimum-advertising-pricing/tree/v0.3.1
-[0.3.0]: https://github.com/shopgate/ext-minimum-advertising-pricing/tree/v0.3.0
+[1.0.1]: https://github.com/shopgate/ext-minimum-advertising-pricing/compare/0.3.1...v1.0.1
+[0.3.1]: https://github.com/shopgate/ext-minimum-advertising-pricing/compare/v0.3.0...0.3.1
+[0.3.0]: https://github.com/shopgate/ext-minimum-advertising-pricing/compare/v0.1.0...v0.3.0
 [0.1.0]: https://github.com/shopgate/ext-minimum-advertising-pricing/tree/v0.1.0
