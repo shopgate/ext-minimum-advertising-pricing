@@ -1,6 +1,6 @@
 {
   "name": "@shopgate/minimum-advertising-pricing",
-  "version": "0.3.1",
+  "version": "1.0.1",
   "description": "Shopgate's Minimum Advertising Pricing extension.",
   "license": "Apache-2.0"
 }
