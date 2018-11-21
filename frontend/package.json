@@ -1,6 +1,6 @@
 {
   "name": "@shopgate/minimum-advertising-pricing",
-  "version": "1.0.2",
+  "version": "1.0.2-beta.1",
   "description": "Hides prices on lists, pdp and favlist if the product has some MAP rules",
   "license": "Apache-2.0",
   "scripts": {
