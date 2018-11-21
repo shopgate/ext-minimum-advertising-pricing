@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
+## [1.0.2-beta.1] - 2018-11-21
+### Changed
+- implemented hook to support shopgate-products 1.5.0
+
 ## [1.0.1] - 2018-11-19
 ### Changed
 - technical change not to override pipeline any more but to use hook instead
@@ -23,6 +27,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Add MAP flag to getProduct_v1 pipeline
 - Filter out all `Apply Map` property from the products
 
+[1.0.2]: https://github.com/shopgate/ext-minimum-advertising-pricing/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/shopgate/ext-minimum-advertising-pricing/compare/0.3.1...v1.0.1
 [0.3.1]: https://github.com/shopgate/ext-minimum-advertising-pricing/compare/v0.3.0...0.3.1
 [0.3.0]: https://github.com/shopgate/ext-minimum-advertising-pricing/compare/v0.1.0...v0.3.0
