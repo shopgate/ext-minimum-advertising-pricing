@@ -60,3 +60,6 @@ typings/
 # IDE
 .idea
 
+# config files
+extension/config.json
+frontend/config.json

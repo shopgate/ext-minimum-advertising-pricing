@@ -1,33 +1,16 @@
-module.exports = function (context, input, cb) {
-  const triggerProps = [
-    {
-      label: 'Apply Map',
-      value: 'yes'
-    }
-  ]
+module.exports = async (context, input) => {
+  const { mapPropertyLabel = '', mapPropertyTrueValue = '' } = context.config || {}
+
   const adjustedProducts = input.products.map((product) => {
-    if (hasTriggerProperty(product.properties, triggerProps)) {
-      product.flags.isMapProduct = true
-    }
+    const trueMapProperty = product.properties.find(({ label, value }) => (
+      mapPropertyLabel.toLowerCase() === label.toLowerCase()
+      && mapPropertyTrueValue.toLowerCase() === value.toLowerCase()
+    ))
+
+    product.flags.isMapProduct = !!trueMapProperty
+
     return product
   })
-  cb(null, {products: adjustedProducts})
-}
 
-/**
- * @param properties
- * @param triggerProps
- * @return {boolean}
- */
-function hasTriggerProperty (properties, triggerProps) {
-  for (let property of properties) {
-    let foundObject = triggerProps.find(
-      triggerProp => triggerProp.label.toLowerCase() === property.label.toLowerCase() &&
-      triggerProp.value.toLowerCase() === property.value.toLowerCase()
-    )
-    if (foundObject) {
-      return true
-    }
-  }
-  return false
+  return { products: adjustedProducts }
 }
