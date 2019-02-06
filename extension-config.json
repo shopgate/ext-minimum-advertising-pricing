@@ -16,7 +16,7 @@
     },
     {
       "id": "CategoryItemPrice",
-      "path": "frontend/portals/ReplaceMAPComponent/index.jsx",
+      "path": "frontend/portals/ReplaceCategoryMap/index.jsx",
       "target": "product-item.price",
       "type": "portals"
     },

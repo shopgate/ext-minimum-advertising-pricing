@@ -14,13 +14,15 @@ class ReplaceMAPComponent extends MAPComponent {
    * @returns {JSX|null}
    */
   render() {
-    const { isMapProduct, isMissingParentData, children } = this.props;
+    const {
+      isMapProduct, isMissingParentData, children, styling,
+    } = this.props;
     if (isMissingParentData) {
       return null;
     }
     if (isMapProduct) {
       return (
-        <span>
+        <span className={styling}>
           <I18n.Text string="minimum_ad_pricing.product_price.map_replacement" />
         </span>
       );

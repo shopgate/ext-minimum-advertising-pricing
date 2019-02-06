@@ -13,6 +13,7 @@ class MAPComponent extends Component {
     getProducts: PropTypes.func,
     isMapProduct: PropTypes.bool,
     isMissingParentData: PropTypes.bool,
+    styling: PropTypes.string,
   };
   static defaultProps = {
     baseProductId: null,
@@ -20,6 +21,7 @@ class MAPComponent extends Component {
     getProducts: () => {},
     isMapProduct: false,
     isMissingParentData: false,
+    styling: null,
   };
 
   /**
