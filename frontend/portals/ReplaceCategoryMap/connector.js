@@ -1,15 +1,14 @@
 import { connect } from 'react-redux';
-import { isAndroid } from '@shopgate/pwa-common/selectors/client';
+import { isIOSTheme } from '../../helpers';
 import { ANDROID, IOS } from '../../constants';
 
 /**
  * Maps the contents of the state to the component props.
- * @param {Object} state The current application state.
  * @return {Object} The extended component props.
  */
-const mapStateToProps = state => (
+const mapStateToProps = () => (
   {
-    platform: isAndroid(state) ? ANDROID : IOS,
+    theme: isIOSTheme() ? IOS : ANDROID,
   }
 );
 

@@ -11,8 +11,8 @@ import { PRODUCT_GRID, IOS } from '../../constants';
  * @return {JSX}
  */
 const ReplaceCategoryMap = (props) => {
-  const { platform, location } = props;
-  return <ReplaceMAPComponent {...props} styling={styles(platform, location)} />;
+  const { theme, location } = props;
+  return <ReplaceMAPComponent {...props} styling={styles(theme, location)} />;
 };
 
 ReplaceCategoryMap.propTypes = {

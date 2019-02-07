@@ -32,14 +32,14 @@ const styles = {
 
 /**
  * Return the correct style based on platform and location
- * @param {string} platform Name of platform -- IOS or ANDROID
+ * @param {string} theme Name of theme -- IOS or ANDROID
  * @param {location} location Name of location
  * @return {string|null}
  */
-export default (platform, location) => {
-  if (!styles[platform] || !styles[platform][location]) {
+export default (theme, location) => {
+  if (!styles[theme] || !styles[theme][location]) {
     return null;
   }
 
-  return css(styles[platform][location]).toString();
+  return css(styles[theme][location]).toString();
 };
