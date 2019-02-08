@@ -1,6 +1,6 @@
 {
   "name": "@shopgate/minimum-advertising-pricing",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Hides prices on lists, pdp and favlist if the product has some MAP rules",
   "license": "Apache-2.0",
   "scripts": {
@@ -11,11 +11,11 @@
     "coverage:watch": "jest --coverage --watch"
   },
   "devDependencies": {
-    "@shopgate/eslint-config": "^5.2.0",
-    "@shopgate/pwa-common": "^5.1.0-beta.3",
-    "@shopgate/pwa-common-commerce": "^5.1.0-beta.3",
-    "@shopgate/pwa-core": "^5.1.0-beta.3",
-    "@shopgate/pwa-unit-test": "^5.1.0-beta.3",
+    "@shopgate/eslint-config": "^6.0.1",
+    "@shopgate/pwa-common": "^6.0.1",
+    "@shopgate/pwa-common-commerce": "^6.0.1",
+    "@shopgate/pwa-core": "^6.0.1",
+    "@shopgate/pwa-unit-test": "^6.0.1",
     "@shopgate/react-hammerjs": "^0.5.3",
     "babel-core": "^6.26.0",
     "babel-plugin-react-transform": "^3.0.0",
@@ -32,5 +32,8 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0"
+  },
+  "peerDependencies": {
+    "@shopgate/pwa-common-commerce": "^6.0.1"
   }
 }

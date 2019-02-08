@@ -1,10 +1,9 @@
-module.exports = function (context, input, cb) {
-  const propertiesBlacklist = ['apply map']
-  const filteredProperties = input.properties.filter(function (property) {
-    if (propertiesBlacklist.indexOf(property.label.toLowerCase()) < 0) {
-      return property
-    }
-  })
+module.exports = async (context, input) => {
+  const { mapPropertyLabel = '' } = context.config || {}
 
-  cb(null, {properties: filteredProperties})
+  const filteredProperties = input.properties.filter(({ label }) => (
+    mapPropertyLabel.toLowerCase() !== label.toLowerCase()
+  ))
+
+  return { properties: filteredProperties }
 }

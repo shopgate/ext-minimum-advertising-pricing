@@ -4,6 +4,21 @@
 
 Shopgate's minimum advertising pricing (MAP) extension.
 
+## Configuration
+
+Set the following values in your Shopgate Connect Admin:
+- `mapPropertyLabel` - (text) Label of product property containing MAP information
+- `mapPropertyTrueValue` - (text) Value of the MAP property when the product is a MAP product
+The label and value are compared in a case insensitive way.
+### Example
+
+```json
+{
+    "mapPropertyLabel": "Apply Map",
+    "mapPropertyTrueValue": "yes"
+}
+```
+
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) file for more information.

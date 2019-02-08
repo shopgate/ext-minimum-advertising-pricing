@@ -1,34 +1,34 @@
 {
-  "version": "1.0.2",
+  "version": "2.0.0",
   "id": "@shopgate/minimum-advertising-pricing",
   "components": [
     {
       "id": "ProductDetailPrice",
-      "path": "frontend/pages/product/ProductDetailPrice/index.jsx",
+      "path": "frontend/portals/ReplaceMAPComponentWrapper/index.jsx",
       "target": "product.price",
       "type": "portals"
     },
     {
       "id": "ProductDetailStrikePrice",
-      "path": "frontend/pages/product/ProductDetailStrikePrice/index.jsx",
+      "path": "frontend/portals/HideMAPComponentWrapper/index.jsx",
       "target": "product.price-striked",
       "type": "portals"
     },
     {
       "id": "CategoryItemPrice",
-      "path": "frontend/pages/category/CategoryItemPrice/index.jsx",
+      "path": "frontend/portals/ReplaceCategoryMap/index.jsx",
       "target": "product-item.price",
       "type": "portals"
     },
     {
       "id": "CategoryItemDiscountBadge",
-      "path": "frontend/pages/category/DiscountBadge/index.jsx",
+      "path": "frontend/portals/HideMAPComponent/index.jsx",
       "target": "product-item.discount",
       "type": "portals"
     },
     {
       "id": "FavlistPrices",
-      "path": "frontend/pages/favlist/Price/index.jsx",
+      "path": "frontend/portals/ReplaceMAPComponent/index.jsx",
       "target": "favorites.product-price",
       "type": "portals"
     },
@@ -39,6 +39,24 @@
     }
   ],
   "configuration": {
+    "mapPropertyLabel" : {
+      "type": "admin",
+      "destination": "backend",
+      "default": "Apply Map",
+      "params": {
+        "type": "text",
+        "label": "Label of product property that holds MAP information"
+      }
+    },
+    "mapPropertyTrueValue" : {
+      "type": "admin",
+      "destination": "backend",
+      "default": "yes",
+      "params": {
+        "type": "text",
+        "label": "value of MAP product property that indicates that product is a MAP product"
+      }
+    }
   },
   "steps": [
     {
@@ -52,6 +70,16 @@
       ],
       "output": [
         {"key": "products"}
+      ]
+    },
+    {
+      "path": "extension/filterProductProperties.js",
+      "hooks": ["shopgate.catalog.getProductProperties.v1:after"],
+      "input": [
+        {"key": "properties"}
+      ],
+      "output": [
+        {"key": "properties"}
       ]
     }
   ]

@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
+### Changed
+- made extension compatible with PWA 6
+- made MAP property label and true value configurable
+- replaced last pipeline with hook
 
 ## [1.0.2] - 2018-11-21
 ### Changed
