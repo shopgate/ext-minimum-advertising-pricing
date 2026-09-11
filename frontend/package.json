@@ -1,6 +1,6 @@
 {
   "name": "@shopgate/minimum-advertising-pricing",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Hides prices on lists, pdp and favlist if the product has some MAP rules",
   "license": "Apache-2.0",
   "scripts": {
@@ -32,8 +32,5 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0"
-  },
-  "peerDependencies": {
-    "@shopgate/pwa-common-commerce": "^6.0.1"
   }
 }
